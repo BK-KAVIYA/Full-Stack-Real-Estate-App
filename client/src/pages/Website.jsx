@@ -7,6 +7,7 @@ import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Residencies from "../components/Residencies/Residencies";
 import Value from "../components/Value/Value";
+import Countdown from '../components/Countdown/Countdown';
 
 
 const Website = () => {
@@ -17,6 +18,7 @@ const Website = () => {
       <Hero />
     </div>
     <Companies />
+    <Countdown/>
     <Residencies/>
     <Value/>
     <Contact/>
