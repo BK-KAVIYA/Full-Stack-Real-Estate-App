@@ -89,4 +89,42 @@
   .countdown span:not(:first-child) {
     background-color: #20c997; /* Change color for hours, minutes, seconds */
   }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .countdown {
+    font-size: 18px; /* Decrease font size for smaller screens */
+  }
+
+  .countdown span {
+    padding: 6px 10px; /* Adjust padding for smaller screens */
+  }
+
+  button {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+
+  .countdown.paddings {
+    display: none; /* Hide countdown text for screens <= 768px */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .WhiteText {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+  }
+
+  .countdown {
+    font-size: 16px; /* Decrease font size for smaller screens */
+  }
+
+  .countdown span {
+    padding: 4px 8px; /* Adjust padding for smaller screens */
+  }
+
+  button {
+    padding: 6px 12px; /* Adjust padding for smaller screens */
+  }
+}
+
   

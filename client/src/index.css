@@ -1,7 +1,7 @@
 :root {
   --primary: #2c3e50; /* Dark blue */
   --secondary: rgba(255, 255, 255, 0.9); /* White with high transparency */
-  --black: #34495e; /* Dark gray */
+  --black: #008080; 
   --blue-gradient: linear-gradient(97.05deg, #3498db 3.76%, #2980b9 100%); /* Blue gradient */
   --orange-gradient: linear-gradient(270deg, #ff9f43 0%, #ff6b6b 100%); /* Orange gradient */
   --blue: #3498db; /* Blue */
@@ -82,7 +82,12 @@ a {
 }
 
 .secondaryText {
-  color: rgb(140 139 139);
+  color: #a1a1a1;
+  font-size: 0.9rem;
+}
+
+.heroSecondaryText {
+  color: yellow;
   font-size: 0.9rem;
 }
 .orangeText {

@@ -36,10 +36,10 @@ const Countdown = () => {
         <span className="WhiteText">Get 20% Discount</span>
       </div>
       <div className="countdown paddings">
-        <span>{timeLeft.days}</span> days{' '}
-        <span>{timeLeft.hours}</span> hours{' '}
-        <span>{timeLeft.minutes}</span> minutes{' '}
-        <span>{timeLeft.seconds}</span> seconds
+        <span>{timeLeft.days}</span> Days{' '}
+        <span>{timeLeft.hours}</span> Hours{' '}
+        <span>{timeLeft.minutes}</span> Minutes{' '}
+        <span>{timeLeft.seconds}</span> Seconds
       </div>
     </div>
   </div>
