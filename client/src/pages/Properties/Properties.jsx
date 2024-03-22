@@ -4,6 +4,8 @@ import "./Properties.css";
 import useProperties from "../../hooks/useProperties";
 import { PuffLoader } from "react-spinners";
 import PropertyCard from "../../components/PropertyCard/PropertyCard";
+
+
 const Properties = () => {
   const { data, isError, isLoading } = useProperties();
   const [filter, setFilter] = useState("");
@@ -35,15 +37,15 @@ const Properties = () => {
 
         <div className="paddings flexCenter properties">
           {
-            // data.map((card, i)=> (<PropertyCard card={card} key={i}/>))
+            //data.map((card, i)=> (<PropertyCard card={card} key={i}/>))
 
             data
-              .filter(
-                (property) =>
-                  property.title.toLowerCase().includes(filter.toLowerCase()) ||
-                  property.city.toLowerCase().includes(filter.toLowerCase()) ||
-                  property.country.toLowerCase().includes(filter.toLowerCase())
-              )
+              // .filter(
+              //   (property) =>
+              //     property.title.toLowerCase().includes(filter.toLowerCase()) ||
+              //     property.city.toLowerCase().includes(filter.toLowerCase()) ||
+              //     property.country.toLowerCase().includes(filter.toLowerCase())
+              // )
               .map((card, i) => (
                 <PropertyCard card={card} key={i} />
               ))

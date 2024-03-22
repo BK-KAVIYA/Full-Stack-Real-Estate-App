@@ -1,11 +1,11 @@
 import React from "react";
 import { useQuery } from "react-query";
-import { getAllProperties } from "../utils/api";
+import data from "../utils/slider.json";
 
 const useProperties = () => {
-  const { data, isLoading, isError, refetch } = useQuery(
+  const { isLoading, isError, refetch } = useQuery(
     "allProperties",
-    getAllProperties,
+    () => Promise.resolve({ data }), // Simulate async data fetching
     { refetchOnWindowFocus: false }
   );
 
